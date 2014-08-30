@@ -1,79 +1,182 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Guihua : 网上展览馆">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Guihua</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Geek-Lee/guihua">View on GitHub</a>
-
-          <h1 id="project_title">Guihua</h1>
-          <h2 id="project_tagline">网上展览馆</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Geek-Lee/guihua/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Geek-Lee/guihua/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网上展览馆</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <script type="text/javascript" src="scripts/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <div class="global-nav-container">
+        <div class="global-nav-content">
+            <h2><a href="index.html"><span class="lsf">home</span>首页</a></h2>
+            <div class="user-info">
+                <span class="hd-user-name">Usersss</span>
+                <span class="hd-user-img lsf">user</span>
+                <a href="javascripts:void(0)">个人中心</a>
+                <a href="javascripts:void(0)">设置</a>
+                <a href="javascripts:void(0)">退出</a>
+            </div>
+            <p class="hd-link"><a href="javascript:void(0)" title="RSS">RSS</a><a href="javascript:void(0)" title="English">English</a><a href="javascript:void(0)" title="繁">繁</a><a href="javascript:void(0)" title="简">简</a></p>
+        </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <div class="header-container">
+        <div id="header">
+            <a href="index.html" class="logo-btn">
+                <h1 id="logo">广州网上展览馆</h1>
+                <h1>广州网上展览馆</h1>
+                <p>Gallery Online</p>
+            </a>
+            <!-- <p class="onav"><a href="javascript:void(0)" title="新浪微博">新浪微博</a> | <a href="javascript:void(0)" title="腾讯微博">腾讯微博</a> | <a href="javascript:void(0)" title="简">简</a> | <a href="javascript:void(0)" title="繁">繁</a> | <a href="javascript:void(0)" title="English">English</a> | <a href="javascript:void(0)" title="Rss订阅">Rss订阅 </a> </p> -->
+        </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Guihua maintained by <a href="https://github.com/Geek-Lee">Geek-Lee</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <div class="gallery-container">
+        <div class="gallery-content">
+            <div class="pic-img-container" data-img-on="1">
+                <ul class="pic-container gmainlist">
+                    <li class="pic-item">
+                        <div class="pic-item-cntr">
+                            <img src="images/pic_1.jpg" alt="">
+                            <div class="pic-item-info">
+                                <h3>I read English magazines with the help of a dictionary</h3>
+                                <a href="javacript:void(0)" class="readmore">read more</a><span class="goto"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pic-item">
+                        <div class="pic-item-cntr">
+                            <img src="images/pic_3.jpg" alt="">
+                            <div class="pic-item-info">
+                                <h3>I read English magazines with the help of a dictionary</h3>
+                                <a href="javacript:void(0)" class="readmore">read more</a><span class="goto"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="pic-container gswaplist"></ul>
+            </div>
+            <ol class="pic-info-container">
+                <li class="pic-info-btn hover">
+                    <div class="info-btn-cntr">
+                        <h3><span><span class="lsf">coffee</span></span>展馆动态</h3>
+                    </div>
+                </li>
+                <li class="pic-info-btn">
+                    <div class="info-btn-cntr">
+                        <span class="pic-info-date">
+                            21
+                            <span class="pic-info-mouth">Nav</span>
+                        </span>
+                        <div class="digest">
+                            <h3 title="青岛至广州开通高铁">青岛至广州开通...</h3>
+                            <p>为践行党的群众路线教育实践活动，做好属地规划管理及服务工作，2月19日...</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic-info-btn">
+                    <div class="info-btn-cntr">
+                        <span class="pic-info-date">
+                            15
+                            <span class="pic-info-mouth">Sep</span>
+                        </span>
+                        <div class="digest">
+                            <h3 title="番禺儿童公园规划“扩容”">番禺儿童公园规划...</h3>
+                            <p>会上， 分局领导结合分局2013年工作重点，系统介绍了天河区重点规划编制项目及...</p>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
     </div>
-
-    
-
-  </body>
+    <div class="nav-container">
+        <div class="nav-content">
+            <ul class="nav">
+                <li class="nav-btn-layout"><a href="index.html" class="nav-btn nav-hover">主页</a></li>
+                <li class="nav-btn-layout"><a href="javascript:void(0)" class="nav-btn">虚拟展馆</a></li>
+                <li class="nav-btn-layout"><a href="Planning.html" class="nav-btn">规划互动</a></li>
+                <li class="nav-btn-layout"><a href="javascript:void(0)" class="nav-btn">飞越广州</a></li>
+                <li class="nav-btn-layout"><a href="javascript:void(0)" class="nav-btn">规划科普</a></li>
+                <li class="nav-btn-layout"><a href="javascript:void(0)" class="nav-btn">参观指南</a></li>
+                <li class="nav-btn-layout"><a href="javascript:void(0)" class="nav-btn">商务资讯</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="article-container">
+        <div class="article-content">
+            <div class="tab">
+                <h3><span><span class="lsf">compass</span></span>主要展厅</h3>
+                <div class="tab-container">
+                    <img src="images/images1.jpg" alt="" class="con-img">
+                    <span class="tab-btn"><span class="lsf">plus</span></span>
+                    <div class="tab-con">
+                        <p>Hello Boy!</p>
+                        <span class="back-tab"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <h3><span><span class="lsf">album</span></span>布展厅</h3>
+                <div class="tab-container">
+                    <img src="images/images2.jpg" alt="" class="con-img">
+                    <span class="tab-btn"><span class="lsf">plus</span></span>
+                    <div class="tab-con">
+                        <p>Hello Boy!</p>
+                        <span class="back-tab"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <h3><span><span class="lsf">help</span></span>楼上楼下</h3>
+                <div class="tab-container">
+                    <img src="images/images3.jpg" alt="" class="con-img">
+                    <span class="tab-btn"><span class="lsf">plus</span></span>
+                    <div class="tab-con">
+                        <p>Hello Boy!</p>
+                        <span class="back-tab"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog-container">
+        <div class="blog-content">
+            <div class="info-container">
+                <h3>天河规划分局四项举措促进阳光规划</h3>
+                <p>2月17日下午，天河规划分局召开全局会议，及时传达区纪委会议精神。会上，分局领导总结了一年来纪检监察工作情况、廉政工作开展情况，并要求在已取得突出成果的良好基础上，从四方面继续做好规划审批及服务工作，实现阳光规划。一是进一步完善廉政风险防控流程图，定期开展自我检讨，全面检视近期规划审批工作中存在的问题...</p>
+            </div>
+            <div class="pic-container"><img src="images/images5.jpg" alt="">
+                <h3><a href="#"><span>外部展示</span><br />网上展览馆</a></h3>
+            </div>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="picture-box">
+            <div class="picbox">
+                <ul class="piclist mainlist">
+                    <li><a href="#" target="_blank"><img src="images/1.jpg" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/2.jpg" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/3.jpg" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/4.jpg" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/1.jpg" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/2.jpg" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/3.jpg" /></a></li>
+                    <li><a href="#" target="_blank"><img src="images/4.jpg" /></a></li>
+                </ul>
+                <ul class="piclist swaplist"></ul>
+            </div>
+            <div class="og_prev"></div>
+            <div class="og_next"></div>
+        </div>
+    </div>
+    <div id="footer-container">
+        <div id="footer">
+            <p>网站纠错：用鼠标选取纠错内容，再按下Ctrl+Enter键或者点击“网站纠错”</p>
+            <p><a href="javascript:void(0)">网站地图</a> | <a href="javascript:void(0)">网站声明</a> | <a href="javascript:void(0)">私隐安全</a> | <a href="javascript:void(0)">联系我们</a> | <a href="javascript:void(0)">使用帮助</a> | <a href="javascript:void(0)">网站导航</a> | <a href="javascript:void(0)">邮箱登录</a> | <a href="javascript:void(0)">网站纠错</a></p>
+            <p><span>主办：广州市规划局</span> | <span>技术支持：广州市规划局</span> | <span>Email：upo@upo.gov.cn</span></p>
+            <p>www.upo.gov.cn All Rights Reserved ICP备案号：粤ICP备13040610号</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/selectivizr.js"></script>
+    <script type="text/javascript" src="scripts/utils.js"></script>
+</body>
 </html>

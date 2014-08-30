@@ -1,0 +1,114 @@
+@import "../includes/reset.less";
+@import "../includes/variable.less";
+@import "../includes/header-footer.less";
+
+.main-container {
+    padding: 0 0 20px 0;
+    min-width: 960px;
+    min-height: 480px;
+    background-color: #f0f0f0;
+    .main-content {
+        margin: 0 auto;
+        width: 960px;
+        // background-color: #fff;
+        overflow: hidden;
+    }
+}
+
+.location {
+    margin: 10px 0;
+    padding: 0 10px;
+    height: 28px;
+    color: #6b6b6b;
+    line-height: 28px;
+    border: 1px dashed #ccc; 
+    background-color: #fff;
+    a {
+        color: #6b6b6b;
+    }
+}
+
+.left-bar {
+    float: left;
+    margin: 0 0 40px 0;
+    padding: 0 0 120px 0;
+    width: 10%;
+    border: 1px solid #ccc;
+    border-bottom: 3px solid #1a863b;
+    text-align: center;
+    background-color: #fff;
+}
+
+.left-bar-title {
+    height: 72px;
+    border-bottom: 8px solid #1a863b;
+    background-color: @themeColor;
+    line-height: 75px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.bar-nav-container {
+    a {
+        display: block;
+        height: 75px;
+        border-bottom: 1px solid #ccc;
+        line-height: 75px;
+        color: #6b6b6b;
+        &:hover {
+            background-color: #f0f0f0;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+    .selected {
+        color: #000;
+        background-color: #f0f0f0;
+    }
+}
+
+.right-bar {
+    float: right;
+    margin: 0 0 40px 0;
+    padding: 1% 4%;
+    width: 79%;
+    min-height: 840px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    .article-title {
+        height: 64px;
+        line-height: 64px;
+        font-size: 24px;
+        border-bottom: 3px solid #e0e0e0;
+    }
+    .article-info-con {
+        height: 54px;
+        line-height: 54px;
+        overflow: hidden;
+        a {
+            display: inline-block;
+            float: left;
+            margin: 0 60px 0 0;
+            height: 54px;
+            line-height: 54px;
+        }
+        .post-icon {
+            display: block;
+            float: left;
+            margin: 0 8px 0 0;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            font-size: 28px;
+            color: #6b6b6b;
+        }
+        .from, .post-date, .setting, .print {
+            color: #8b8b8b;
+            &:hover {
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+}

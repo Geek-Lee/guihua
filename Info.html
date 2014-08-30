@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>网上展览馆 | 规划互动</title>
+    <link rel="stylesheet" type="text/css" href="styles/secPage.css" />
+    <style type="text/css">
+        .anchorBL, .BMap_cpyCtrl {
+            display: none;
+        }
+        h1.tit-h1 { font-size:38px; text-align:center; margin:30px 0 15px; color:#f60;}
+        .go-back{ text-align:center; border-top:1px dashed #ccc; padding:10px; margin-top:20px; font-size:40px;}
+        .wrapper { padding:10px;}
+
+        #graphbox{
+        border:1px solid #e7e7e7;
+        padding:10px;
+        width:545px;
+        background-color:#f8f8f8;
+        margin:5px 0;
+        }
+        .itemname{
+        width:70px;
+        font-weight:700;
+        font-size:14px;
+        line-height:18px;
+        height:18px;
+        padding:2px;
+        text-align:right;
+        margin-right:atuo;
+        }
+        .percent{
+        width:150px;
+        float:right;
+        font-size:13px;
+        line-height:18px;
+        height:18px;
+        padding:2px;
+        color:#555;
+        text-align:left;
+        margin-right:3px;
+        }
+        .graph{
+        position:relative;
+        background-color:#F0EFEF;
+        border:1px solid #cccccc;
+        font-size:13px;
+        width:300px;
+        font-weight:700;
+        float:right;
+        margin-right:3px;
+        }
+        .color1, .color2, .color3, .color4, .color5{
+        position:relative;
+        text-align:left;
+        color:#ffffff;
+        height:18px;
+        line-height:18px;
+        font-family:Arial;
+        display:block;
+        }
+        .graph .color1{background-color:#669999;}
+        .graph .color2{background-color:#6699FF;}
+        .graph .color3{background-color:#FF9900;}
+        .graph .color4{background-color:#FF3333;}
+        .graph .color5{background-color:#990000;}
+        .font1{color:#669999;}
+        .font2{color:#6699FF;}
+        .font3{color:#FF9900;}
+        .font4{color:#FF3333;}
+        .font5{color:#990000;}
+        #voteContainer {position: relative;overflow: hidden;}
+        #voteContainer p#vote-btn-con {width:100%; text-align: center;}
+        #voteContainer p#vote-btn-con button {width: 240px;color:#fff;background-color:#2dcc70;border:0;line-height: 24px;}
+        #voteContainer .wrapper:nth-child(1){float: right;padding: 20px 0;width: 20%;}
+        #voteContainer .wrapper:nth-child(1) li{line-height: 24px;}
+        #voteContainer .wrapper:nth-child(2){float: right; width: 75%; overflow: hidden;}
+    </style>
+    <script type="text/javascript" src="scripts/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <div class="global-nav-container">
+        <div class="global-nav-content">
+            <h2><a href="index.html"><span class="lsf">home</span>首页</a></h2>
+            <div class="user-info">
+                <span class="hd-user-name">Usersss</span>
+                <span class="hd-user-img lsf">user</span>
+                <a href="javascripts:void(0)">个人中心</a>
+                <a href="javascripts:void(0)">设置</a>
+                <a href="javascripts:void(0)">退出</a>
+            </div>
+            <p class="hd-link"><a href="javascript:void(0)" title="RSS">RSS</a><a href="javascript:void(0)" title="English">English</a><a href="javascript:void(0)" title="繁">繁</a><a href="javascript:void(0)" title="简">简</a></p>
+        </div>
+    </div>
+    <div class="header-container">
+        <div id="header">
+            <a href="index.html" class="logo-btn">
+                <h1 id="logo">网上展览馆</h1>
+                <h1>网上展览馆</h1>
+                <p>Gallery Online</p>
+            </a>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="nav-content">
+            <ul class="nav">
+                <li class="nav-btn-layout"><a href="index.html" class="nav-btn">首页</a></li>
+                <li class="nav-btn-layout"><a href="javascript:void(0)" class="nav-btn">虚拟展馆</a></li>
+                <li class="nav-btn-layout"><a href="Planning.html" class="nav-btn nav-hover">规划互动</a></li>
+                <li class="nav-btn-layout"><a href="javascript:void(0)" class="nav-btn">参观指南</a></li>
+                <li class="nav-btn-layout"><a href="javascript:void(0)" class="nav-btn">飞越广州</a></li>
+                <li class="nav-btn-layout"><a href="javascript:void(0)" class="nav-btn">规划科普</a></li>
+                <li class="nav-btn-layout"><a href="javascript:void(0)" class="nav-btn">商务资讯</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main-content">
+            <p class="location">您当前的位置：<a href="javascript:void(0)">规划互动</a> &gt <a href="Info.html">广泛参与</a></p>
+            <div class="left-bar">
+                <h2 class="left-bar-title">规划互动</h2>
+                <ul class="bar-nav-container">
+                    <li><a href="Planning.html">互动游戏</a></li>
+                    <li><a class="selected" href="Info.html">广泛参与</a></li>
+                    <li><a href="javascript:void(0)">低碳故事屋</a></li>
+                    <li><a href="javascript:void(0)">知识问答</a></li>
+                    <li><a href="javascript:void(0)">学习园地</a></li>
+                    <li><a href="javascript:void(0)">绿道</a></li>
+                    <li><a href="javascript:void(0)">道路系统</a></li>
+                    <li><a href="javascript:void(0)">配套市政设施</a></li>
+                </ul>
+            </div>
+            <div class="right-bar">
+                <h1 class="article-title">广州文化设施“四大馆”设计国际竞赛方案邀请公众广泛参与</h1>
+                <p class="article-info-con"><a class="from"><span class="post-icon lsf">pen</span>广州规划局</a><a class="post-date"><span class="post-icon lsf">dailycalendar</span><span class="post-year">2013</span>-<span class="post-mon">10</span>-<span class="post-day">24</span></a><a class="setting"><span class="post-icon lsf">setting</span>大 中 小</a><a class="print"><span class="post-icon lsf">print</span>打印</a></p>
+                <div class="post-content">
+                    <p>融岭南特色 建文化高地</p>
+    　　            <p>广州文化设施“四大馆”设计国际竞赛方案邀请公众广泛参与</p>
+                    <p>广州文化设施“四大馆”设计国际竞赛已于近期回收竞赛成果。现计划于2014年1月13日开放展览，并接受公众对“三馆一场”和“一馆一园”项目分别进行公众最喜欢的方案投票。</p>
+    　　            <p>展览时间：2014年1月13日至2月10日每天10点至17点，其中公众投票期为2014年1月13日至23日;</p>
+                    <p>展览地点：琶洲阅江路688号保利国际广场东馆二层(南广场入)。</p>
+    　　            <ul>投票方式：
+    　　                  <li>1、在展览地点进行现场投票;</li>
+    　　                  <li>2、发邮件至gz2013competition@163.com</li>
+    　　                  <li>3、提交书面意见至广州市越秀区吉祥路80号广州文化设施“四大馆”设计国际竞赛委员会办公室，邮政编码：510030</li>
+                    </ul>
+    　　            <p>欢迎社会各界人士前往参观，并为方案深化提供宝贵意见，感谢对广州城市规划工作的支持。</p>
+    　　            <p>一、国际竞赛简介</p>
+    　　            <p>文化设施“四大馆”分为“三馆一场”和“一馆一园”两个项目：</p>
+                    <p>“三馆一场”项目位于广州塔南侧，北至珠江，南至新港中路，西联赤岗领事馆区，东至赤岗北路，总用地面积约55.5公顷，包括广州博物馆、广州美术馆、广州科学馆和岭南广场。为将该区域打造为城市文化设施核心区,“三馆一场”规划建设需重点研究和解决的五个主要问题：第一, 妥善拆迁安置，提升区域居民生活品质;第二, 打造中轴线南北段一气呵成的城市景观;第三, 研究“三馆一场”与广州塔、赤岗塔的和谐共融;第四, 实现工业遗产和古树名木的保护和利用;第五,突破人、车、物流错综复杂的交通瓶颈。</p>
+                    <p>“一馆一园”项目位于海珠湖公园北侧，东起新光快速，西至杨湾涌，南抵海珠湖，北至新滘南路，总用地面积约34.5公顷，包括广州文化馆和岭南大观园。项目主要研究广州文化馆、岭南大观园与海珠湖公园景观的融和;滨水岸线的利用和处理。</p>
+                    <p>广州市规划局于2013年5月开始组织广州文化设施"四大馆"设计国际竞赛,经过深入前期研究和分析论证。为国际竞赛提供了顺利开展的技术条件。9月发布竞赛公告，引起了全球广泛关注，共吸引了114家设计团队积极报名参与。竞赛委员会组织专家进行参赛单位遴选会，从中综合评选出16家来自法国、美国、德国、荷兰、瑞士、丹麦、西班牙、澳大利亚、中国香港及内地具有丰富大型文化建筑规划设计经验的精英团队作为参赛单位，按照每个项目8家的设定分别开展两个项目的设计竞赛，经过80天的设计，16家设计团队高水平、高质量的完成了设计任务。</p>
+                    <p>本次竞赛以打造世界级文化高地的定位，分别对“三馆一场”、“一馆一园”两个项目开展设计研究。从竞赛成果看来，“三馆一场”设计包括了创造交流平台、促进文化融合，建立立体交通、弘扬地域特色四大创新特点;而“一馆一园”设计则体现了打造景观文脉、布局园中有园、活化滨水空间、体现岭南特色四大设计特点。</p>
+                    <div id="mapCon" style="position:relative;height:640px;overflow:hidden;"></div>
+                    <div id="voteContainer">
+                        <div class="wrapper">
+                            <form>
+                                <ul>
+                                    <li><input type="radio" name="project" checked id="type1"  value="1"  />方案一</li>
+                                    <li><input type="radio" name="project" id="type2"  value="2"  />方案二</li>
+                                    <li><input type="radio" name="project" id="type3"  value="3"  />方案三</li>
+                                    <li><input type="radio" name="project" id="type4"  value="4"  />方案四</li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div class="wrapper">
+                            <div id="graphbox">
+                              <div class="little_box">
+                               <div class="percent">
+                               <span>25</span>票</div>
+                               <div class="graph">
+                               <span class="color1" style="width:25.0%;">&nbsp;</span></div>
+                               <div class="itemname font1">方案一   </div>
+                              </div> 
+
+                              
+                              <div class="little_box">
+                               <div class="percent">
+                               <span>25</span>票</div>
+                               <div class="graph">
+                               <span class="color2" style="width:25.0%;">&nbsp;</span></div>
+                               <div class="itemname font2">方案二</div>
+                              </div>
+                              
+                              
+                              
+                              <div class="little_box">
+                               <div class="percent">
+                              <span>2</span>票   </div>
+                               <div class="graph">
+                               <span class="color3" style="width:0.5%;">&nbsp;</span></div>
+                               <div class="itemname font3">方案三</div>
+                              </div>
+                              
+                              
+                              <div class="little_box">
+                               <div class="percent">
+                              <span>2</span>票   </div>
+                               <div class="graph">
+                               <span class="color4" style="width:0.5%;">&nbsp;</span></div>
+                               <div class="itemname font4">方案四</div>
+                              </div> 
+                            </div>
+                        </div> 
+                        <p id="vote-btn-con"><button id="vote">投票</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container">
+        <div id="footer">
+            <p>网站纠错：用鼠标选取纠错内容，再按下Ctrl+Enter键或者点击“网站纠错”</p>
+            <p><a href="javascript:void(0)">网站地图</a> | <a href="javascript:void(0)">网站声明</a> | <a href="javascript:void(0)">私隐安全</a> | <a href="javascript:void(0)">联系我们</a> | <a href="javascript:void(0)">使用帮助</a> | <a href="javascript:void(0)">网站导航</a> | <a href="javascript:void(0)">邮箱登录</a> | <a href="javascript:void(0)">网站纠错</a></p>
+            <p><span>主办：广州市规划局</span> | <span>技术支持：广州市规划局</span> | <span>Email：upo@upo.gov.cn</span></p>
+            <p>www.upo.gov.cn All Rights Reserved ICP备案号：粤ICP备13040610号</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4U5k4k6G9S1xgjQ58XyaHKa2"></script>
+    <script type="text/javascript" src="scripts/project.js"></script>
+    <script type="text/javascript" src="scripts/vote.js"></script>
+    <script type="text/javascript" src="scripts/selectivizr.js"></script>
+    <script type="text/javascript" src="scripts/utils.js"></script>
+    <script type="text/javascript">  
+        (function(window, $) {
+            function VoteFun() {
+                $('#vote').click(function() {
+                    var ind = $('input:checked').parent().index();
+                    var $el = $('.little_box').eq(ind).children('.graph');
+                    var txt = parseInt($el.siblings('.percent').children('span').text());
+                    $el.siblings('.percent').children('span').text(txt+1);
+                    $el.children('span').css('width','+=1%');
+                    return false;
+                });  
+            }
+            window.func = VoteFun;
+        }(window, jQuery));
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            
+            obj = {  
+                el: "mapCon",
+                city: '广州',
+                map3d: true,
+                mapPointX: 113.330527,
+                mapPointY: 23.103516,
+                mapZoom: 17,
+                polygon: [{"x":113.330581,"y":23.107842},{"x":113.331233,"y":23.107766},{"x":113.333674,"y":23.103167},{"x":113.331931,"y":23.103206}]
+            };
+            var oVote = new Vote(obj, info);
+            oVote.initElem();
+            oVote.addBtnEvent('click', function() {
+                
+            });
+
+            func();
+            
+        });
+    </script>
+</body>
+</html>
